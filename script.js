@@ -1,24 +1,19 @@
 // script.js
-document.getElementById('dataForm').addEventListener('submit', function(event) {
+document.getElementById('purchaseOrderForm').addEventListener('submit', function(event) {
   event.preventDefault();
   
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var age = document.getElementById('age').value;
-  var message = document.getElementById('message').value;
+  var partyName = document.getElementById('partyName').value;
   
   // Display output on the webpage
   var outputDiv = document.getElementById('output');
   outputDiv.innerHTML = `
-    <h2>Output</h2>
-    <p><strong>Name:</strong> ${name}</p>
-    <p><strong>Email:</strong> ${email}</p>
-    <p><strong>Age:</strong> ${age}</p>
-    <p><strong>Message:</strong> ${message}</p>
+    <h2>Purchase Order Summary</h2>
+    <p><strong>Party Name:</strong> ${partyName}</p>
+    <!-- Add additional purchase order details here -->
   `;
   
   // Optional: You can perform further actions here, such as sending the data to a server
   
   // Optional: Reset the form
-  document.getElementById('dataForm').reset();
+  document.getElementById('purchaseOrderForm').reset();
 });
