@@ -1,7 +1,7 @@
 /* styles.css */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
@@ -14,7 +14,7 @@ header {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 600px;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
@@ -26,32 +26,23 @@ header {
   margin-bottom: 20px;
 }
 
-h2 {
-  margin-top: 0;
-  color: #333;
-}
-
-.form-group {
-  margin-bottom: 20px;
+form {
+  display: grid;
+  gap: 20px;
 }
 
 label {
-  display: block;
-  margin-bottom: 5px;
+  font-size: 18px;
   color: #333;
 }
 
-input[type="text"],
-textarea {
-  width: 100%;
+input[type="text"] {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box;
 }
 
 button {
-  width: 100%;
   padding: 10px;
   background-color: #2ecc71;
   color: #fff;
